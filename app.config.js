@@ -4,7 +4,6 @@ module.exports = {
     slug: "photo-map-app",
     version: "1.0.0",
     orientation: "portrait",
-    icon: "./assets/icon.png",
     userInterfaceStyle: "light",
     ios: {
       supportsTablet: true,
@@ -16,12 +15,6 @@ module.exports = {
       }
     },
     android: {
-      adaptiveIcon: {
-        backgroundColor: "#E6F4FE",
-        foregroundImage: "./assets/android-icon-foreground.png",
-        backgroundImage: "./assets/android-icon-background.png",
-        monochromeImage: "./assets/android-icon-monochrome.png"
-      },
       permissions: [
         "android.permission.ACCESS_COARSE_LOCATION",
         "android.permission.ACCESS_FINE_LOCATION",
@@ -34,9 +27,6 @@ module.exports = {
           apiKey: process.env.EXPO_PUBLIC_GOOGLE_MAPS_API_KEY || ""
         }
       }
-    },
-    web: {
-      favicon: "./assets/favicon.png"
     }
   }
 };
