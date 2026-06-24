@@ -11,7 +11,7 @@
  */
 export const generateImageDescription = async (base64Image, apiKey) => {
   if (!apiKey || apiKey.trim() === '') {
-    throw new Error('Chưa thiết lập Gemini API Key. Vui lòng cấu hình API Key trong màn hình Cài đặt.');
+    throw new Error('Chưa thiết lập Gemini API Key. Vui lòng cấu hình biến EXPO_PUBLIC_GEMINI_API_KEY trong file .env.');
   }
 
   console.log('GeminiService: Khởi tạo kết nối tới Gemini API...');

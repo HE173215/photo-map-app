@@ -232,7 +232,7 @@ export default function App() {
     try {
       if (!apiKey || apiKey.trim() === "") {
         throw new Error(
-          "Chưa thiết lập Gemini API Key. Vui lòng bấm vào cài đặt ở góc trên bên phải để nhập API Key thực.",
+          "Chưa thiết lập Gemini API Key. Vui lòng điền API Key vào biến EXPO_PUBLIC_GEMINI_API_KEY trong file .env ở máy tính.",
         );
       }
 
